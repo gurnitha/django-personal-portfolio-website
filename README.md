@@ -89,3 +89,10 @@ https://github.com/gurnitha/django-personal-portfolio-website
         new file:   config/urls.py
         new file:   config/wsgi.py
         new file:   manage.py
+
+
+#### 5.2 Install django Rest Framework
+
+        modified:   README.md
+        modified:   config/settings.py
+        modified:   config/urls.py
