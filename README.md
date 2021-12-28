@@ -3,7 +3,7 @@ https://github.com/gurnitha/django-personal-portfolio-website
 
 
 ### 1. PRASYARAT
-
+----------------
 
         1. Menginstal Python versi 3+ 
         2. Menginstal Pip
@@ -14,7 +14,7 @@ https://github.com/gurnitha/django-personal-portfolio-website
 
 
 ### 2. INISIAL SETUP
-
+--------------------
 
         1. Membuat root folder 'personal-portfolio-website'
         2. cd personal-portfolio-website
@@ -27,7 +27,7 @@ https://github.com/gurnitha/django-personal-portfolio-website
 
 
 ### 3. MEMBUAT LOKAL DAN REMOTE REPOSITORI
-
+------------------------------------------
 
 #### 3.1 Menyimpan inisiasi proyek pada lokal repositori
 
@@ -49,7 +49,17 @@ https://github.com/gurnitha/django-personal-portfolio-website
 
         1. Membuat remote repositori
         2. Mendeploy file proyek ke remote repositori
-        
+        3. Memeriksa hasilnya
+
         https://github.com/gurnitha/django-personal-portfolio-website 
+
+        modified:   README.md
+
+
+
+### 4. PROYEK PROTOTYPE
+-----------------------
+
+#### 4.1 Demo proyek prototype
 
         modified:   README.md
