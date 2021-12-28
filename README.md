@@ -119,3 +119,21 @@ https://github.com/gurnitha/django-personal-portfolio-website
         new file:   apps/user_interface/views.py
         modified:   config/settings.py
 
+
+
+### 6. MEMBUAT HELLO WORLD DENGAN UVT
+
+
+#### 6.1 Membuat Hello World dengn Urls, View dan HttpResponse
+
+        modified:   README.md
+        new file:   apps/user_interface/urls.py
+        modified:   apps/user_interface/views.py
+        modified:   config/urls.py
+
+        Steps:
+
+        1. Membuat urls
+        2. Membuat views
+        3. Meng-include urls pada proyek
+        4. Memastikan hasilnya
