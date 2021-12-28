@@ -35,7 +35,9 @@ INSTALLED_APPS = [
     # Third party app
     'rest_framework',
 
-
+    # Locals
+    'apps.user_interface.apps.UserInterfaceConfig',
+    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

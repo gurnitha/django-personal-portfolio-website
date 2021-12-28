@@ -96,3 +96,26 @@ https://github.com/gurnitha/django-personal-portfolio-website
         modified:   README.md
         modified:   config/settings.py
         modified:   config/urls.py
+
+
+#### 5.3 Membuat django app 'apps/user_interface'
+
+        Steps:
+
+        1. Membuat folder baru 'apps'
+        2. Membuat folder baru 'apps/user_interface'
+        3. Membuat django app 'apps/user_interface'
+        4. Modifikasi file user_interface/apps.py
+        5. Instal 'user_interface' app pada config/settings.py
+        6. Jalankan server untuk menguji
+
+        modified:   README.md
+        new file:   apps/user_interface/__init__.py
+        new file:   apps/user_interface/admin.py
+        new file:   apps/user_interface/apps.py
+        new file:   apps/user_interface/migrations/__init__.py
+        new file:   apps/user_interface/models.py
+        new file:   apps/user_interface/tests.py
+        new file:   apps/user_interface/views.py
+        modified:   config/settings.py
+
