@@ -1,5 +1,5 @@
 ### MEMBUAT PERSONAL PORTFOLIO WEBSITE
-
+https://github.com/gurnitha/django-personal-portfolio-website
 
 
 ### 1. PRASYARAT
@@ -41,3 +41,15 @@
 
         new file:   .gitignore
         new file:   README.md
+
+
+#### 3.2 Membuat remote repository pada Github dan men-deploy file proyek ke remote repositori tersebut.
+
+        Steps:
+
+        1. Membuat remote repositori
+        2. Mendeploy file proyek ke remote repositori
+        
+        https://github.com/gurnitha/django-personal-portfolio-website 
+
+        modified:   README.md
