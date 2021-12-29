@@ -166,7 +166,20 @@ https://github.com/gurnitha/django-personal-portfolio-website
         1. Membuat model
         2. Jalankan migrasi
         3. Periksa hasilnya
-        
+
         modified:   README.md
         new file:   apps/user_interface/migrations/0002_informationmodel.py
+        modified:   apps/user_interface/models.py
+
+
+#### 7.3 Membuat Education model
+
+        Steps:
+
+        1. Membuat model
+        2. Jalankan migrasi
+        3. Periksa hasilnya
+
+        modified:   README.md
+        new file:   apps/user_interface/migrations/0003_educationmodel.py
         modified:   apps/user_interface/models.py
