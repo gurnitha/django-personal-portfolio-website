@@ -122,7 +122,7 @@ https://github.com/gurnitha/django-personal-portfolio-website
 
 
 ### 6. MEMBUAT HELLO WORLD DENGAN UVT
-
+-------------------------------------
 
 #### 6.1 Membuat Hello World dengn Urls, View dan HttpResponse
 
@@ -141,7 +141,7 @@ https://github.com/gurnitha/django-personal-portfolio-website
 
 
 ### 7. DJANGO MODEL
-
+-------------------
 
 #### 7.1 Membuat User model Menggunakan AbstractUser
 
@@ -245,3 +245,19 @@ https://github.com/gurnitha/django-personal-portfolio-website
         modified:   apps/user_interface/admin.py
         new file:   apps/user_interface/migrations/0007_messagemodel.py
         modified:   apps/user_interface/models.py
+
+
+
+### 8. DJANGO ADMIN
+-------------------
+
+#### 8.1 Mengaktifkan Django admin
+
+        Steps:
+
+        1. Membuat superuser
+        2. Jalankan server
+        3. Login
+        4. Memeriksa admin interface
+
+        modified:   README.md
