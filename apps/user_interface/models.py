@@ -112,3 +112,46 @@ class SkillsetModel(models.Model):
 
     def __str__(self):
         return f"{self.user} => {self.title}"
+
+
+# Model: ProjectModel
+class ProjectModel(models.Model):
+
+    #Creating 1 to 5 level choice
+    Rating_range = [
+        ('1', '1'),
+        ('2', '2'),
+        ('3', '3'),
+        ('4', '4'),
+        ('5', '5'),
+    ]
+    
+    user = models.ForeignKey(User, default=None, blank=True, null=True, on_delete=models.CASCADE)
+    title = models.CharField(max_length=50, blank=True, null=True)
+    slug = models.SlugField(max_length=200, blank=True, null=True, unique=True)
+    imagelink = models.URLField(blank=True, null=True)
+    description = models.TextField(blank=True, null=True)
+    projectRating = models.CharField(choices=Rating_range, default='2', max_length=10)
+    demo = models.URLField(blank=True, null=True)
+    github_project = models.URLField(blank=True, null=True)
+
+    class Meta:
+        ordering = ['-projectRating']
+
+    def __str__(self):
+        return f"{self.user} => {self.title}"
+
+    def get_project_absolute_url(self):
+        return "/projects/{}".format(self.slug)
+
+    def save(self, *args, **kwargs):
+        self.slug = self.slug_generate()
+        if kwargs.__contains__('request') and self.user is None:
+            request = kwargs.pop('request')
+            self.user = request.user
+        super(ProjectModel, self).save(*args, **kwargs)
+
+    def slug_generate(self):
+        slug = self.title.strip()
+        slug = re.sub("", "_", slug)
+        return slug.lower()
