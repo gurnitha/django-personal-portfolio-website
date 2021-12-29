@@ -137,3 +137,23 @@ https://github.com/gurnitha/django-personal-portfolio-website
         2. Membuat views
         3. Meng-include urls pada proyek
         4. Memastikan hasilnya
+
+
+
+### 7. DJANGO MODEL
+
+
+#### 7.1 Membuat User model Menggunakan AbstractUser
+
+        Steps:
+
+        1. Import AbstractUser
+        2. Membuat User model
+        3. Memeriksa hasilnya
+        4. Solusinya
+        5. Memeriksa hasilnya
+
+        modified:   README.md
+        new file:   apps/user_interface/migrations/0001_initial.py
+        modified:   apps/user_interface/models.py
+        modified:   config/settings.py

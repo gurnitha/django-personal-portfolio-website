@@ -139,3 +139,6 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
     ]
 }
+
+# new
+AUTH_USER_MODEL = 'user_interface.User'
