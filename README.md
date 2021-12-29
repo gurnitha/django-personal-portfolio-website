@@ -222,3 +222,26 @@ https://github.com/gurnitha/django-personal-portfolio-website
         modified:   README.md
         new file:   apps/user_interface/migrations/0006_projectmodel.py
         modified:   apps/user_interface/models.py
+
+
+#### 7.7 Membuat Message model
+
+        Steps:
+
+        1. Membuat model
+        2. Jalankan migrasi
+        3. Periksa hasilnya
+
+
+#### 7.7 Meregistrasi modesl pada admin.py
+
+        Steps:
+
+        1. Import semua model
+        2. Registrasi model
+        3. Memeriksa hasilnya
+
+        modified:   README.md
+        modified:   apps/user_interface/admin.py
+        new file:   apps/user_interface/migrations/0007_messagemodel.py
+        modified:   apps/user_interface/models.py

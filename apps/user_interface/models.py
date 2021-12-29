@@ -125,7 +125,7 @@ class ProjectModel(models.Model):
         ('4', '4'),
         ('5', '5'),
     ]
-    
+
     user = models.ForeignKey(User, default=None, blank=True, null=True, on_delete=models.CASCADE)
     title = models.CharField(max_length=50, blank=True, null=True)
     slug = models.SlugField(max_length=200, blank=True, null=True, unique=True)
@@ -155,3 +155,26 @@ class ProjectModel(models.Model):
         slug = self.title.strip()
         slug = re.sub("", "_", slug)
         return slug.lower()
+
+
+# Model: ProjectModel
+class MessageModel(models.Model):
+    user = models.ForeignKey(User, default=None, blank=True, null=True, on_delete=models.CASCADE)
+    name = models.CharField(max_length=100, blank=False, null=False)
+    email = models.EmailField(max_length=200, blank=False, null=False)
+    message = models.TextField(blank=False, null=False)
+    subject = models.CharField(max_length=1000, blank=False, null=False)
+    send_time = models.DateTimeField(auto_now_add=True)
+    is_read = models.BooleanField(default=False)
+
+    class Meta:
+        ordering = ['-send_time']
+
+    def save(self, **kwargs):
+        if kwargs.__contains__('request') and self.user is None:
+            request = kwargs.pop('request')
+            self.user = request.user
+        super(MessageModel, self).save(**kwargs)
+
+    def __str__(self):
+        return f"{self.user} => {self.subject}"
