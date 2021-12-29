@@ -157,3 +157,16 @@ https://github.com/gurnitha/django-personal-portfolio-website
         new file:   apps/user_interface/migrations/0001_initial.py
         modified:   apps/user_interface/models.py
         modified:   config/settings.py
+
+
+#### 7.2 Membuat Information model
+
+        Steps:
+
+        1. Membuat model
+        2. Jalankan migrasi
+        3. Periksa hasilnya
+        
+        modified:   README.md
+        new file:   apps/user_interface/migrations/0002_informationmodel.py
+        modified:   apps/user_interface/models.py
