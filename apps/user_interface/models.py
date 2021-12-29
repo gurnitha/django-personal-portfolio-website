@@ -60,3 +60,24 @@ class EducationModel(models.Model):
             request = kwargs.pop('request')
             self.user = request.user
         super(EducationModel, self).save(**kwargs)
+
+
+# Model: ExperienceModel
+class ExperienceModel(models.Model):
+    user = models.ForeignKey(User, default=None, blank=True, null=True, on_delete=models.CASCADE)
+    title = models.CharField(max_length=50, blank=True, null=True)
+    the_year = models.CharField(max_length=50, blank=True, null=True)
+    institute = models.CharField(max_length=200, blank=True, null=True)
+    description = models.TextField(blank=True, null=True)
+    
+    class Meta:
+        ordering = ['-the_year']
+
+    def save(self, **kwargs):
+        if kwargs.__contains__('request') and self.user is None:
+            request = kwargs.pop('request')
+            self.user = request.user
+        super(ExperienceModel, self).save(**kwargs)
+
+    def __str__(self):
+        return f"{self.user} => {self.title} from {self.institute}"
